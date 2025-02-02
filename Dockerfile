@@ -1,5 +1,5 @@
 # Usa una imagen base de Python
-FROM python:3.9-slim
+FROM python:3.13.1
 
 # Establece el directorio de trabajo
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app/
 
 # Instala las dependencias
-RUN pip install -r src/requirements.txt
+RUN pip install -r requirements.txt
 
 # Expón el puerto donde Flask escuchará
 EXPOSE 5000

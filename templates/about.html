@@ -1,14 +1,54 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="container text-center bg-white p-5 shadow-lg rounded border border-light mt-5 mb-5" style="max-width: 600px; margin: auto; height: 500px; display: flex; flex-direction: column; justify-content: space-between;">
-    <h1 class="display-4 mb-4 text-primary">Hello, world!</h1>
-    <p class="lead mb-4 text-muted">This is a simple hero unit, a simple component for calling extra attention to featured content or information.</p>
-    <p class="mb-4 text-secondary">It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  
-    <div class="btn-group mb-4" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-success rounded-pill px-4 py-2">Sí</button>
-        <button type="button" class="btn btn-danger rounded-pill px-4 py-2">No</button>
+<div class="container text-center bg-light p-5 shadow-lg rounded border border-light mt-5 mb-5" style="max-width: 600px; margin: auto; height: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+    <!-- Título atractivo -->
+    <h1 class="display-4 mb-4 text-info animate__animated animate__fadeIn">¿Quieres ser mi San Valentín?</h1>
+    
+    <!-- Mensaje atractivo -->
+    <p class="lead mb-4 text-dark animate__animated animate__fadeIn animate__delay-1s" style="font-size: 1.2rem;">Este es un pequeño regalo que me gustaría compartir contigo. Me harías muy feliz si dijieras que sí. 💖</p>
+    
+    <!-- Botones con estilo personalizado -->
+    <div class="btn-group mb-4" role="group" aria-label="Respuesta a la pregunta" style="z-index: 10;">
+        <!-- Botón "Sí" -->
+        <button type="button" class="btn btn-outline-success rounded-pill px-4 py-2 btn-lg animate__animated animate__fadeIn animate__delay-2s">
+            Sí, quiero ser tu San Valentín 💘
+        </button>
+        
+        <!-- Botón "No" -->
+        <button type="button" class="btn btn-outline-warning rounded-pill px-4 py-2 btn-lg animate__animated animate__fadeIn animate__delay-3s">
+            Obviooo 
+        </button>
     </div>
 </div>
 {% endblock %}
+
+<!-- Estilos adicionales -->
+<style>
+    /* Animaciones con Animate.css */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+    
+    /* Fondo con estilo de corazón */
+    .container {
+        background: linear-gradient(135deg, #f8a5c2, #f6e58d); /* Cambio en el fondo */
+        color: white;
+    }
+    
+    /* Estilos del título */
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #0984e3; /* Color diferente para el título */
+    }
+
+    /* Estilos para los botones */
+    .btn-group .btn {
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+        transform: scale(1.1);
+        background-color: #0984e3; /* Cambio en el hover */
+        color: white;
+    }
+</style>
