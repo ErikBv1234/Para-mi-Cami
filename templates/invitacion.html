@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container text-center bg-light p-5 shadow-lg rounded border border-light mt-5 mb-5" style="max-width: 800px; margin: auto;">
+    <!-- Encabezado romántico -->
+    <h1 class="text-lila display-3 animate__animated animate__fadeIn" style="color: #9b59b6; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">💖 ¡Nuestra Cita Especial! 💖</h1>
+    <p class="lead text-dark">Te invito a una tarde increíble llena de amor, risas y momentos especiales. ✨</p>
+    <hr>
+
+    <!-- Sección de la cita virtual -->
+    <div class="mt-4">
+        <h2 class="text-danger">💻 Cita Virtual</h2>
+        <p class="text-dark"><strong>📍 Lugar:</strong> Videollamada (Zoom, Discord, WhatsApp, Google Meet)</p>
+        <p class="text-dark"><strong>⏳ Duración:</strong> 1-2 horas</p>
+
+        <h3 class="mt-3 text-info">💜 Opciones de actividades:</h3>
+        <ul class="list-group">
+            <li class="list-group-item text-dark">🍽️ <strong>Cena a distancia:</strong> Pidamos la misma comida o cocinemos juntos en videollamada.</li>
+            <li class="list-group-item text-dark">🎬 <strong>Ver una película/serie:</strong> Usaremos Teleparty o compartiremos pantalla.</li>
+            <li class="list-group-item text-dark">🎮 <strong>Jugar juntos:</strong> ¿Un juego cooperativo para reír y divertirnos?</li>
+            <li class="list-group-item text-dark">🖌️ <strong>Dibujo en pareja:</strong> Pintemos juntos algo bonito en Aggie.io.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Sección de películas recomendadas -->
+    <div class="mt-4">
+        <h2 class="text-success">🎥 Películas románticas para nuestra noche 💕</h2>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h4 class="card-title text-dark">🌟 Bajo la misma estrella</h4>
+                <p class="card-text text-dark">Dos jóvenes con enfermedades terminales encuentran el amor en un grupo de apoyo. Una historia de amor, esperanza y despedidas.</p>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h4 class="card-title text-dark">💞 A dos metros de ti</h4>
+                <p class="card-text text-dark">Dos adolescentes con fibrosis quística se enamoran, pero deben mantenerse a distancia para proteger su salud.</p>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h4 class="card-title text-dark">💌 El diario de Noah</h4>
+                <p class="card-text text-dark">Una historia de amor inolvidable que desafía el tiempo y las adversidades, basada en la novela de Nicholas Sparks.</p>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h4 class="card-title text-dark">⏳ Cuestión de tiempo</h4>
+                <p class="card-text text-dark">Un joven con la habilidad de viajar en el tiempo usa su don para encontrar el amor verdadero.</p>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h4 class="card-title text-dark">🎼 La La Land</h4>
+                <p class="card-text text-dark">Un pianista de jazz y una actriz luchan por sus sueños en Los Ángeles mientras su amor enfrenta desafíos.</p>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h4 class="card-title text-dark">✨ Yo antes de ti</h4>
+                <p class="card-text text-dark">Una chica alegre y un hombre parapléjico encuentran amor y significado en sus vidas de maneras inesperadas.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+<style>
+    .text-lila {
+        color: #8e44ad;
+        font-weight: bold;
+    }
+    .card {
+        background: #fff5f8;
+        border: 1px solid #ffccd5;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card-title {
+        color: #d63384;
+        font-weight: bold;
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .card-text {
+        color: #444;
+        font-size: 1rem;
+    }
+    .list-group-item {
+        color: #444;
+    }
+    h1 {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el título */
+        font-size: 3.5rem; /* Aumenté el tamaño de la fuente */
+        font-weight: bold;
+    }
+</style>

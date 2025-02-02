@@ -10,5 +10,9 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/invitacion')
+def invitacion():
+    return render_template('invitacion.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
